@@ -102,20 +102,22 @@ int main() {
     }
 
     mqtt_thread.start(callback(&mqtt_queue, &EventQueue::dispatch_forever));
-    int i = 0;
+    Ticker accdata;
+    accdata.attach(mqtt_queue.event(&publish_message, &client), 500ms);
+    /*int i = 0;
     while (i < 20) {
         mqtt_queue.call(&publish_message, &client);
         ThisThread::sleep_for(500ms);
         i++;
-    }
+    }*/
     //btn2.rise(mqtt_queue.event(&publish_message, &client));
     //btn3.rise(&close_mqtt);
 
-    int num = 0;
+    /*int num = 0;
     while (num != 5) {
             client.yield(100);
             ++num;
-    }
+    }*/
 
     while (1) {
             if (closed) break;

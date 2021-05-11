@@ -13,7 +13,7 @@
     {
         "module": "[fill]",
         "size": {
-            ".text": 214,
+            ".text": 184,
             ".data": 11,
             ".bss": 49,
             ".text-delta": 0,
@@ -68,7 +68,7 @@
     {
         "module": "main.o",
         "size": {
-            ".text": 3186,
+            ".text": 3386,
             ".data": 4,
             ".bss": 409,
             ".text-delta": 0,
@@ -90,7 +90,7 @@
     {
         "module": "mbed-os/connectivity",
         "size": {
-            ".text": 10938,
+            ".text": 10928,
             ".data": 99,
             ".bss": 181,
             ".text-delta": 0,
@@ -101,7 +101,7 @@
     {
         "module": "mbed-os/drivers",
         "size": {
-            ".text": 1732,
+            ".text": 2014,
             ".data": 0,
             ".bss": 928,
             ".text-delta": 0,
@@ -112,7 +112,7 @@
     {
         "module": "mbed-os/events",
         "size": {
-            ".text": 1520,
+            ".text": 1526,
             ".data": 0,
             ".bss": 3104,
             ".text-delta": 0,
@@ -201,7 +201,7 @@
         "summary": {
             "static_ram": 17816,
             "static_ram_delta": 0,
-            "total_flash": 118856,
+            "total_flash": 119304,
             "total_flash_delta": 0
         }
     }
